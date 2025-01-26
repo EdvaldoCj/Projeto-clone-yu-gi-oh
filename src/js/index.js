@@ -8,7 +8,7 @@ btnAvancar.addEventListener("click", function () {
 
   esconderCartaoSelecionado();
   cartaoAtual++;
-  mostrarCartao();
+  mostrarCartao(cartaoAtual);
 });
 
 btnVoltar.addEventListener("click", function () {
@@ -16,10 +16,10 @@ btnVoltar.addEventListener("click", function () {
 
   esconderCartaoSelecionado();
   cartaoAtual--;
-  mostrarCartao();
+  mostrarCartao(cartaoAtual);
 });
 
-function mostrarCartao() {
+function mostrarCartao(cartaoAtual) {
   cartoes[cartaoAtual].classList.add("selecionado");
 }
 
